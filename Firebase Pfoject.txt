@@ -1,0 +1,22 @@
+1. Create a flutter project
+2. update pubspec.yaml 
+	firebase: ^9.0.2
+	firebase_auth: ^3.3.4
+  	firebase_core: ^1.10.6
+  	cloud_firestore: ^3.1.5
+  	google_sign_in: ^5.2.1
+  	firebase_storage: ^10.2.4
+  	firebase_messaging: ^11.2.4
+3. create a firebase new project
+4. Package name
+	>> android >> app >> src >> build.gradle --> default config{ applicationId "com.example.firebase_02" }
+   app registration complete!
+5. Firebase 2nd stape:
+	Download google service.json
+	Move the google-services.json file you just downloaded into your Android "app" module root directory.
+	Next >> Add firebase SDK:
+		copy "classpath 'com.google.gms:google-services:4.3.10'" In Dependencies
+		paste Project-level build.gradle (<project>/build.gradle): dependencies
+		copy: java >> implementation platform('com.google.firebase:firebase-bom:29.0.3')
+		paste it in last
+6. firebase setup complete and click on next.
